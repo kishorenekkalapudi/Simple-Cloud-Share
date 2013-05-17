@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="User_UserMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Cloud Share</title>
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="noheader">
+    <form id="form1" runat="server">
+<div id="container">
+	<div id="header">
+    	<h1><a href="UserHome.aspx">Simple<strong> Cloud Share.com</strong></a></h1>
+        <h2>virtual machines for development</h2>
+        <div class="clear"></div>
+    </div>
+
+    <div id="nav">
+    	<ul class="sf-menu dropdown">
+        	<li><a href="UserHome.aspx">Home</a></li>
+            <li><a href="UpdateProfile.aspx">Update Profile</a> </li>
+            <li><a href="VirtualMachine.aspx">Virtual Machine</a> </li>
+            <li><a href="ViewStatistics.aspx">View Statistics</a> </li>
+            <li><a href="ChangePassword.aspx">Change Password</a></li>            
+            <li><asp:LinkButton ID="lnklogout" runat="server" onclick="lnklogout_Click" CausesValidation="false">Log Out</asp:LinkButton></li>
+        </ul>
+    </div>
+        
+    <div id="body">            
+		<div id="content">
+            <div class="box">
+                <b>
+                <p>Welcome <asp:Label ID="lblname" runat="server"></asp:Label> </p>
+                </b>
+                <asp:ContentPlaceHolder ID="Register" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>  
+        </div>
+        
+    	<div class="clear"></div>
+    </div>
+</div>
+    </form>
+</body>
+</html>
