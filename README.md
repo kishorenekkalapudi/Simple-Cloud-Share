@@ -9,4 +9,4 @@ Technologies and SDKs Used- Microsoft ASP.NET, Ajax, Power CLI VMware vSphere SD
 
 Technologies Used
 =================
-Java, REST Web Services, HTML, Java Script, JQuery, JQuery Libraries, PhoneGap, Android, Hadoop
+.NET, C#, ASP.NET, ADO.NET, 3-Tier Architecture, SQL Server 2008
